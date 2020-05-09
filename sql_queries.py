@@ -29,7 +29,7 @@ songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays \
                                 IF NEW.artist_id IS NULL THEN
                                     NEW.artist_id = 'Does not exist';
                                 END IF;
-                                IF NEW.user_id_id IS NULL THEN
+                                IF NEW.user_id IS NULL THEN
                                     NEW.user_id = 'Does not exist';
                                 END IF;
 
