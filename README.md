@@ -40,7 +40,7 @@ Each table in the schema has a *PRIMARY KEY* and *NOT NULL* so that we have good
 
         songplay_table_create = ("""CREATE TABLE IF NOT EXISTS songplays \
                             (songplay_id serial PRIMARY KEY, \
-                            start_time varchar NOT NULL, \
+                            start_time varchar, \
                             user_id int NOT NULL, \
                             level varchar, \
                             song_id varchar NOT NULL, \
