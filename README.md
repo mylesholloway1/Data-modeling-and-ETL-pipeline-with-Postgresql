@@ -70,6 +70,9 @@ Before each insert a fuction is called to check for NULL values. We want to ensu
             IF NEW.artist_id IS NULL THEN
                 NEW.artist_id = 'Does not exist';
             END IF;
+            IF NEW.user_id IS NULL THEN
+                NEW.user_id = 'Does not exist';
+            END IF;
 
             RETURN NEW;
         END;
